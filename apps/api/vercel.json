@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "npm run build --workspace=packages/core --prefix ../..",
+    "buildCommand": "npm --prefix ../.. run build --workspace=packages/core",
     "rewrites": [
         { "source": "/(.*)", "destination": "/api" }
     ]
