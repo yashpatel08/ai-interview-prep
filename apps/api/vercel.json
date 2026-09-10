@@ -1,18 +1,13 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "src/index.ts",
-            "use": "@vercel/node",
-            "config": {
-                "includeFiles": "src/**"
-            }
+    "buildCommand": "cd ../.. && npm run build:api",
+    "installCommand": "cd ../.. && npm install",
+    "functions": {
+        "dist/index.js": {
+            "includeFiles": "dist/**"
         }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/index.ts"
-        }
+    },
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/dist/index.js" }
     ]
 }
