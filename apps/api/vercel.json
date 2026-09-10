@@ -1,7 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "cd ../.. && npm run build:api",
-    "installCommand": "cd ../.. && npm install",
+    "buildCommand": "npm run build:api",
     "functions": {
         "dist/index.js": {
             "includeFiles": "dist/**"
