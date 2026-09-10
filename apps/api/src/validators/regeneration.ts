@@ -7,7 +7,6 @@ export const regenerateSectionSchema = z
             "questions",
             "flashcards",
         ]),
-
         category: z
             .enum([
                 "technical",
@@ -18,10 +17,7 @@ export const regenerateSectionSchema = z
             .optional(),
     })
     .superRefine((value, ctx) => {
-        if (
-            value.section !== "questions" &&
-            value.category
-        ) {
+        if (value.section !== "questions" && value.category) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["category"],
@@ -30,6 +26,3 @@ export const regenerateSectionSchema = z
             });
         }
     });
-
-export type RegenerateSectionInput =
-    z.infer<typeof regenerateSectionSchema>;
