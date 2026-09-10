@@ -17,11 +17,11 @@
         "noEmit": false
     },
     "include": [
-        "src/**/*.ts",
-        "api/[...path].ts"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules",
-        "dist"
+        "dist",
+        "api"
     ]
 }
