@@ -12,10 +12,7 @@ const envSchema = z.object({
         .positive()
         .default(4000),
 
-    MONGODB_URI: z
-        .string()
-        .min(1)
-        .default("mongodb://127.0.0.1:27017/ai-interview-prep"),
+    MONGODB_URI: z.string().min(1).optional(),
 
     FRONTEND_URL: z
         .string()
@@ -36,14 +33,28 @@ const envSchema = z.object({
 
 const parsed = envSchema.safeParse(process.env);
 
-if (!parsed.success) {
+if (
+    !parsed.success ||
+    (parsed.data.NODE_ENV === "production" && !parsed.data.MONGODB_URI)
+) {
     console.error("Invalid environment configuration:");
 
-    console.error(
-        parsed.error.flatten().fieldErrors,
-    );
+    if (!parsed.success) {
+        console.error(parsed.error.flatten().fieldErrors);
+    } else {
+        console.error({
+            MONGODB_URI: [
+                "MONGODB_URI is required in production",
+            ],
+        });
+    }
 
     process.exit(1);
 }
 
-export const env = parsed.data;
+export const env = {
+    ...parsed.data,
+    MONGODB_URI:
+        parsed.data.MONGODB_URI ??
+        "mongodb://127.0.0.1:27017/ai-interview-prep",
+};
