@@ -1,0 +1,40 @@
+{
+  "name": "ai-interview-prep",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "npm --workspace apps/api run dev",
+    "build": "npm run build:web && npm run build:api",
+    "build:web": "npm --workspace apps/web run build",
+    "build:api": "npm --workspace apps/api run build",
+    "test": "vitest run",
+    "evaluate": "tsx scripts/evaluate.ts"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "concurrently": "^9.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cheerio": "^1.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.5",
+    "robots-parser": "^3.0.1",
+    "zod": "^4.5.4"
+  }
+}

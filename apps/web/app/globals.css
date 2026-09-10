@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+:root {
+  /* ----------------------------------------
+     Base
+  ----------------------------------------- */
+
+  --background: #ffffff;
+  --foreground: #111827;
+
+  /* ----------------------------------------
+     Brand
+  ----------------------------------------- */
+
+  --primary: #017752;
+  --primary-hover: #016346;
+  --primary-light: #e8f5f0;
+
+  /* ----------------------------------------
+     Surfaces
+  ----------------------------------------- */
+
+  --surface: #f8fafc;
+  --surface-hover: #f1f5f9;
+
+  /* ----------------------------------------
+     Borders
+  ----------------------------------------- */
+
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+
+  /* ----------------------------------------
+     Text
+  ----------------------------------------- */
+
+  --text-muted: #6b7280;
+  --text-subtle: #9ca3af;
+
+  /* ----------------------------------------
+     States
+  ----------------------------------------- */
+
+  --success: #16a34a;
+  --success-light: #ecfdf3;
+
+  --error: #dc2626;
+  --error-light: #fef2f2;
+
+  --warning: #d97706;
+  --warning-light: #fffbeb;
+
+  /* ----------------------------------------
+     Focus
+  ----------------------------------------- */
+
+  --ring: #017752;
+
+  /* ----------------------------------------
+     Fonts
+  ----------------------------------------- */
+
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
+
+@theme inline {
+  /* Base */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Brand */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+
+  /* Surfaces */
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+
+  /* Borders */
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  /* Text */
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+
+  /* States */
+  --color-success: var(--success);
+  --color-success-light: var(--success-light);
+
+  --color-error: var(--error);
+  --color-error-light: var(--error-light);
+
+  --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
+
+  /* Focus */
+  --color-ring: var(--ring);
+
+  /* Fonts */
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+/* ----------------------------------------
+   Base
+----------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background: var(--background);
+  color: var(--foreground);
+
+  font-family: var(--font-sans);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----------------------------------------
+   Typography
+----------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--foreground);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------------------------------
+   Forms
+----------------------------------------- */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-subtle);
+}
+
+/* ----------------------------------------
+   Focus
+----------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* ----------------------------------------
+   Selection
+----------------------------------------- */
+
+::selection {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+/* ----------------------------------------
+   Scrollbar
+----------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

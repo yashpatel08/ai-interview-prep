@@ -1,0 +1,32 @@
+[
+    {
+        "id": "case-01",
+        "jd": "Senior Backend Engineer\n\nWe are looking for a Senior Backend Engineer with experience building Node.js and TypeScript services. You will design APIs, work with databases, write tests, and collaborate with frontend engineers. Experience with REST APIs, MongoDB, Docker, and cloud deployment is required.",
+        "company_url": "http://localhost:8099/acme/",
+        "days": 5
+    },
+    {
+        "id": "case-02",
+        "jd": "Frontend Engineer\n\nBuild responsive web applications using React and TypeScript.",
+        "company_url": "http://localhost:8099/acme/",
+        "days": 1
+    },
+    {
+        "id": "case-03",
+        "jd": "Software Engineer\n\nBuild reliable software.",
+        "company_url": "http://localhost:8099/acme/",
+        "days": 60
+    },
+    {
+        "id": "case-04",
+        "jd": "Backend Developer\n\nBuild APIs and services using Node.js.",
+        "company_url": "http://localhost:8099/does-not-exist/",
+        "days": 3
+    },
+    {
+        "id": "case-05",
+        "jd": "Senior Full Stack Engineer\n\nBuild production web applications using React, TypeScript, Node.js, REST APIs, databases, testing, Docker, and cloud deployment.",
+        "company_url": "http://localhost:8099/acme/",
+        "days": 7
+    }
+]

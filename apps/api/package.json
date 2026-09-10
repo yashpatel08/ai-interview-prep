@@ -1,0 +1,14 @@
+{
+    "name": "@ai-interview-prep/api",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "build": "tsc --outDir dist",
+        "start": "node dist/server.js"
+    },
+    "dependencies": {
+        "@ai-interview-prep/core": "*"
+    }
+}

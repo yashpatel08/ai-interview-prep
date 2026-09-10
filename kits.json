@@ -1,0 +1,1498 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-10T07:13:30.365Z",
+  "kits": [
+    {
+      "id": "case-01",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Localhost",
+          "company_url": "http://localhost:8099/acme/",
+          "role": "Backend Engineer",
+          "location": "",
+          "jd_chars": 302,
+          "jd": "Senior Backend Engineer\n\nWe are looking for a Senior Backend Engineer with experience building Node.js and TypeScript services. You will design APIs, work with databases, write tests, and collaborate with frontend engineers. Experience with REST APIs, MongoDB, Docker, and cloud deployment is required.",
+          "researched_at": "2026-09-10T07:11:01.057Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "No reliable company research information was available from the provided website.",
+          "what_they_do": "The company website did not provide enough accessible information to determine what the company does.",
+          "sources": []
+        },
+        "role": {
+          "title": "Backend Engineer",
+          "seniority": "Senior",
+          "responsibilities": [
+            "Design APIs",
+            "Work with databases",
+            "Write tests",
+            "Collaborate with frontend engineers"
+          ],
+          "requirements": [
+            {
+              "id": "r_01720b15-bc6f-4779-a8e0-72d18f11839c",
+              "text": "Experience building Node.js and TypeScript services",
+              "kind": "experience",
+              "priority": "must"
+            },
+            {
+              "id": "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "text": "Design APIs",
+              "kind": "responsibility",
+              "priority": "must"
+            },
+            {
+              "id": "r_eec41070-9b60-4eb2-9a3f-c788573e13f0",
+              "text": "Work with databases",
+              "kind": "responsibility",
+              "priority": "must"
+            },
+            {
+              "id": "r_9aaa1e33-c772-4c87-95df-a1d7aee975df",
+              "text": "Write tests",
+              "kind": "responsibility",
+              "priority": "must"
+            },
+            {
+              "id": "r_7d04d46c-cbfd-48b0-8df4-bd4730708279",
+              "text": "Collaborate with frontend engineers",
+              "kind": "responsibility",
+              "priority": "must"
+            },
+            {
+              "id": "r_545c886c-8917-4353-a9bc-3d7d8d8040e2",
+              "text": "Experience with REST APIs",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_2033e95f-89be-486e-88d1-11c2a9cec750",
+              "text": "Experience with MongoDB",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd",
+              "text": "Experience with Docker",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6",
+              "text": "Experience with cloud deployment",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q_4dbc0226-9f73-4be3-9feb-d96cfad3423c",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c"
+            ],
+            "category": "technical",
+            "prompt": "How do you structure a scalable Node.js application using TypeScript, and how do you handle strict type checking with external libraries?",
+            "answer_outline": "Discuss modular architecture (controllers, services, repositories), utilizing tsconfig strict mode, typing third-party libraries using declaration files or custom type definitions, and leveraging interfaces for dependency injection.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_38aed76b-9cc3-47d7-9a3d-ecbccfcb5e37",
+            "requirement_ids": [
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ],
+            "category": "technical",
+            "prompt": "Walk through your process for designing a RESTful API endpoint. How do you handle versioning, pagination, and standardized error responses?",
+            "answer_outline": "Cover resource naming conventions, HTTP status codes, query parameters for pagination/filtering, URL or header-based versioning, and consistent JSON payload structures for errors.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_4313c665-dcaa-4cc7-815b-0d3f034d5cd1",
+            "requirement_ids": [
+              "r_eec41070-9b60-4eb2-9a3f-c788573e13f0",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750"
+            ],
+            "category": "technical",
+            "prompt": "How do you model relationships and data access patterns in MongoDB for a high-traffic backend service? How do you approach indexing?",
+            "answer_outline": "Discuss embedding vs referencing based on access patterns and cardinality, ensuring documents stay within the 16MB limit, utilizing compound indexes, and analyzing query performance using explain().",
+            "difficulty": 3
+          },
+          {
+            "id": "q_7f4d4ae4-cd45-4b8e-a59f-7d8615578f95",
+            "requirement_ids": [
+              "r_9aaa1e33-c772-4c87-95df-a1d7aee975df"
+            ],
+            "category": "technical",
+            "prompt": "What is your testing strategy for a backend Node.js service, and how do you mock database interactions effectively?",
+            "answer_outline": "Mention unit tests for business logic, integration tests for API endpoints, using tools like Jest or Mocha, and using in-memory databases (like mongodb-memory-server) or mocking layers to isolate database calls.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_020aa810-6989-4b4c-ad7c-b2e6baab99d2",
+            "requirement_ids": [
+              "r_7d04d46c-cbfd-48b0-8df4-bd4730708279"
+            ],
+            "category": "technical",
+            "prompt": "How do you typically collaborate with frontend engineers when defining new feature contracts and integrating APIs?",
+            "answer_outline": "Discuss API-first design approaches, using OpenAPI/Swagger documentation, mocking endpoints for frontend consumption early in development, and handling contract changes gracefully.",
+            "difficulty": 1
+          },
+          {
+            "id": "q_3dc2f5e9-2883-46a7-b241-5b4a8cd02ead",
+            "requirement_ids": [
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd",
+              "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6"
+            ],
+            "category": "technical",
+            "prompt": "How do you containerize a Node.js TypeScript application with Docker, and what considerations do you keep in mind for cloud deployment and orchestration?",
+            "answer_outline": "Cover multi-stage builds to keep image sizes small, non-root user execution, managing environment variables securely, health checks, and container orchestration readiness for cloud environments like AWS ECS or Kubernetes.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_271547b4-c526-484f-9ee7-257e5afdff14",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c",
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time you designed a REST API using Node.js and TypeScript. How did you structure the application and ensure type safety across the service?",
+            "answer_outline": "The candidate should explain their experience with Node.js and TypeScript, discuss how they structured the project for maintainability, detail their REST API design principles, and highlight how leveraging TypeScript types improved reliability and developer velocity.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_67e58f82-89c2-492e-920d-ec5ba9989ddf",
+            "requirement_ids": [
+              "r_eec41070-9b60-4eb2-9a3f-c788573e13f0",
+              "r_9aaa1e33-c772-4c87-95df-a1d7aee975df",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750"
+            ],
+            "category": "behavioral",
+            "prompt": "Describe a scenario where you had to write a complex database query or schema in MongoDB. How did you ensure data integrity, and what was your approach to testing the data access layer?",
+            "answer_outline": "The candidate should discuss their MongoDB schema design choices, how they handled database operations within their backend code, and describe their strategy for writing unit and integration tests to verify database interactions safely.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_f824f8e9-b599-4d91-9076-3146a71ca196",
+            "requirement_ids": [
+              "r_7d04d46c-cbfd-48b0-8df4-bd4730708279",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ],
+            "category": "behavioral",
+            "prompt": "Can you share an experience where you had to collaborate closely with frontend engineers to define and finalize a REST API contract? How did you handle changes and ensure seamless integration?",
+            "answer_outline": "The candidate should outline their collaboration process with frontend teams, such as using OpenAPI/Swagger or early interface agreements, how they communicated breaking changes or updates, and how they unblocked frontend developers during integration.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_4c44e6c3-a251-4fbe-aa26-3516398e7532",
+            "requirement_ids": [
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd",
+              "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time you containerized a backend service using Docker and deployed it to a cloud environment. What challenges did you face with configuration management or environment parity?",
+            "answer_outline": "The candidate should detail their experience writing Dockerfiles for Node.js applications, managing multi-stage builds, handling environment variables securely, and successfully deploying and monitoring the service in a cloud platform.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_30433b2b-6aa7-421f-aa39-eb15c16d40a1",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c",
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750"
+            ],
+            "category": "system_design",
+            "prompt": "Design a Node.js and TypeScript backend service that exposes a REST API backed by MongoDB. Discuss how you structure your models using TypeScript interfaces, handle request validation, and implement clean separation of concerns in your API controllers.",
+            "answer_outline": "Discuss setting up a TypeScript project with Express or NestJS, defining Mongoose or native MongoDB schemas with strict typing, implementing input validation (e.g., using Zod or Joi), structuring routes and controllers for RESTful endpoints, and handling errors consistently across the service.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_ed47689d-e6c7-4115-bd00-5d7402f58e30",
+            "requirement_ids": [
+              "r_eec41070-9b60-4eb2-9a3f-c788573e13f0",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750",
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd",
+              "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6"
+            ],
+            "category": "system_design",
+            "prompt": "Design a data persistence and deployment architecture for a backend service using MongoDB. Explain how you manage database indexing, connection pooling, containerize the application using Docker, and deploy it reliably to a cloud provider.",
+            "answer_outline": "Cover MongoDB connection management, choosing appropriate indexes for query performance, writing a multi-stage Dockerfile for the Node.js/TypeScript app, and configuring environment variables, health checks, and orchestration for a cloud deployment environment (like AWS ECS, Kubernetes, or Google Cloud Run).",
+            "difficulty": 3
+          },
+          {
+            "id": "q_0bca46d7-7dd3-4d00-8734-4485c8243f0b",
+            "requirement_ids": [
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_7d04d46c-cbfd-48b0-8df4-bd4730708279",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ],
+            "category": "system_design",
+            "prompt": "How would you design and document a REST API in collaboration with frontend engineers to ensure a smooth contract agreement, consistent error handling, and efficient data payloads?",
+            "answer_outline": "Discuss API design principles (resource naming, HTTP verbs), using OpenAPI/Swagger or TypeScript shared types for contract definition, implementing pagination and filtering for large collections, designing predictable error response payloads, and establishing a workflow for mocking and iterative feedback with the frontend team.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_71b5a44f-61e8-4fd3-b5a9-eb1ece2be5b2",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c",
+              "r_9aaa1e33-c772-4c87-95df-a1d7aee975df",
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd"
+            ],
+            "category": "system_design",
+            "prompt": "Explain how you structure a Node.js and TypeScript backend codebase to facilitate comprehensive unit and integration testing, and how you integrate these tests into a Docker-based CI/CD pipeline.",
+            "answer_outline": "Explain the testing strategy using tools like Jest or Supertest, mocking external dependencies and MongoDB (using memory servers or test containers), structuring test suites, writing clean testable TypeScript code, and running the test suite inside a Docker container during build pipelines.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_2b327c14-98b2-45b0-a333-0263afa2d12c",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750"
+            ],
+            "category": "company_fit",
+            "prompt": "How do you structure a scalable Node.js and TypeScript service that interacts with MongoDB while designing clean REST APIs?",
+            "answer_outline": "The candidate should discuss setting up a modular architecture using TypeScript interfaces, defining clear RESTful endpoints, using Mongoose or the native MongoDB driver for data modeling and queries, and handling error management and validation effectively.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_d624719a-317f-4a63-a73f-e4e8bc9d75f6",
+            "requirement_ids": [
+              "r_9aaa1e33-c772-4c87-95df-a1d7aee975df",
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd",
+              "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6"
+            ],
+            "category": "company_fit",
+            "prompt": "Describe your approach to writing comprehensive tests for a backend service and ensuring it runs smoothly in a Docker container during cloud deployment.",
+            "answer_outline": "The candidate should explain their unit and integration testing strategy (e.g., using Jest), how they containerize the Node.js application using Dockerfile best practices, and how they manage environment configurations and deployments in a cloud environment.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_ef401d67-a291-4104-bc4f-0b60e4ab3207",
+            "requirement_ids": [
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_7d04d46c-cbfd-48b0-8df4-bd4730708279",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ],
+            "category": "company_fit",
+            "prompt": "How do you typically collaborate with frontend engineers when designing and documenting REST APIs for a new feature?",
+            "answer_outline": "The candidate should mention API-first design approaches, utilizing documentation tools like OpenAPI/Swagger, establishing contract testing or mock servers, and maintaining clear communication channels regarding request/response payloads and error handling.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f_4d270977-bee8-4470-a22c-77fc68ed29a4",
+            "front": "How do you enforce type safety and manage compilation in a Node.js and TypeScript service?",
+            "back": "Use strict mode in tsconfig.json, leverage interfaces/types for data structures, and use tools like ts-node or compile down to JavaScript using the TypeScript compiler (tsc) for production execution.",
+            "requirement_ids": [
+              "r_01720b15-bc6f-4779-a8e0-72d18f11839c"
+            ]
+          },
+          {
+            "id": "f_67e12755-75b6-44f8-94f5-70aab1ea83b7",
+            "front": "What are the core principles of designing a RESTful API?",
+            "back": "Use resource-based URLs, leverage standard HTTP methods (GET, POST, PUT, DELETE, PATCH), return appropriate HTTP status codes (2xx, 4xx, 5xx), and ensure stateless client-server communication.",
+            "requirement_ids": [
+              "r_2ba99946-9129-4c58-a24a-6de921d0295c",
+              "r_545c886c-8917-4353-a9bc-3d7d8d8040e2"
+            ]
+          },
+          {
+            "id": "f_0efb6246-f594-426f-83bc-03c22c03d3c8",
+            "front": "How do you optimize query performance and handle schema design in MongoDB?",
+            "back": "Create appropriate indexes for frequently queried fields, use aggregation pipelines for complex data processing, and design schemas based on access patterns (embedding vs referencing).",
+            "requirement_ids": [
+              "r_eec41070-9b60-4eb2-9a3f-c788573e13f0",
+              "r_2033e95f-89be-486e-88d1-11c2a9cec750"
+            ]
+          },
+          {
+            "id": "f_fffeec3d-5486-4ac1-ae18-f86db0cd86bf",
+            "front": "What is the typical testing pyramid for backend services and what tools are commonly used?",
+            "back": "Unit tests (testing individual functions/modules), integration tests (testing database and API endpoints together), and end-to-end tests. Common tools include Jest, Mocha, and Supertest.",
+            "requirement_ids": [
+              "r_9aaa1e33-c772-4c87-95df-a1d7aee975df"
+            ]
+          },
+          {
+            "id": "f_24a38e84-dec3-44b7-bbd5-0546fa51a990",
+            "front": "How do you effectively collaborate with frontend engineers when building backend services?",
+            "back": "Establish clear API contracts early (using OpenAPI/Swagger), maintain consistent versioning, document error responses clearly, and mock API endpoints if necessary.",
+            "requirement_ids": [
+              "r_7d04d46c-cbfd-48b0-8df4-bd4730708279"
+            ]
+          },
+          {
+            "id": "f_05efd0de-d3b0-4801-a6ef-6ac5cf94f6d1",
+            "front": "What are best practices for writing a Dockerfile for a Node.js and TypeScript application?",
+            "back": "Use multi-stage builds to keep production images small, leverage build caching by copying package.json files before source code, run the container as a non-root user, and use npm ci for deterministic installs.",
+            "requirement_ids": [
+              "r_c5d2b30b-79f4-4a5c-b31a-dc3a139dbcdd"
+            ]
+          },
+          {
+            "id": "f_9a13d502-f4d5-4b3f-bef6-49a806dcba3b",
+            "front": "What are key considerations when preparing a backend service for cloud deployment?",
+            "back": "Managing configuration via environment variables, containerizing the application, implementing health check endpoints, setting up centralized logging, and ensuring graceful shutdown handling.",
+            "requirement_ids": [
+              "r_dbc71eef-94bf-4fad-85b2-20abd304c5f6"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 5,
+          "days": [
+            {
+              "day": 1,
+              "focus": "System design + Company and role fit — 4 priority questions",
+              "question_ids": [
+                "q_ed47689d-e6c7-4115-bd00-5d7402f58e30",
+                "q_30433b2b-6aa7-421f-aa39-eb15c16d40a1",
+                "q_d624719a-317f-4a63-a73f-e4e8bc9d75f6",
+                "q_0bca46d7-7dd3-4d00-8734-4485c8243f0b"
+              ],
+              "minutes": 85
+            },
+            {
+              "day": 2,
+              "focus": "Behavioral preparation + Company and role fit — 3 priority questions",
+              "question_ids": [
+                "q_271547b4-c526-484f-9ee7-257e5afdff14",
+                "q_2b327c14-98b2-45b0-a333-0263afa2d12c",
+                "q_67e58f82-89c2-492e-920d-ec5ba9989ddf"
+              ],
+              "minutes": 60
+            },
+            {
+              "day": 3,
+              "focus": "System design + Company and role fit + Technical preparation — 4 priority questions",
+              "question_ids": [
+                "q_71b5a44f-61e8-4fd3-b5a9-eb1ece2be5b2",
+                "q_ef401d67-a291-4104-bc4f-0b60e4ab3207",
+                "q_3dc2f5e9-2883-46a7-b241-5b4a8cd02ead",
+                "q_4313c665-dcaa-4cc7-815b-0d3f034d5cd1"
+              ],
+              "minutes": 85
+            },
+            {
+              "day": 4,
+              "focus": "Behavioral preparation + Technical preparation — 3 priority questions",
+              "question_ids": [
+                "q_4c44e6c3-a251-4fbe-aa26-3516398e7532",
+                "q_38aed76b-9cc3-47d7-9a3d-ecbccfcb5e37",
+                "q_f824f8e9-b599-4d91-9076-3146a71ca196"
+              ],
+              "minutes": 65
+            },
+            {
+              "day": 5,
+              "focus": "Technical preparation — 3 priority questions",
+              "question_ids": [
+                "q_4dbc0226-9f73-4be3-9feb-d96cfad3423c",
+                "q_7f4d4ae4-cd45-4b8e-a59f-7d8615578f95",
+                "q_020aa810-6989-4b4c-ad7c-b2e6baab99d2"
+              ],
+              "minutes": 55
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-02",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Localhost",
+          "company_url": "http://localhost:8099/acme/",
+          "role": "Frontend Engineer",
+          "location": "",
+          "jd_chars": 80,
+          "jd": "Frontend Engineer\n\nBuild responsive web applications using React and TypeScript.",
+          "researched_at": "2026-09-10T07:11:34.952Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "No reliable company research information was available from the provided website.",
+          "what_they_do": "The company website did not provide enough accessible information to determine what the company does.",
+          "sources": []
+        },
+        "role": {
+          "title": "Frontend Engineer",
+          "seniority": "Not specified",
+          "responsibilities": [
+            "Build responsive web applications using React and TypeScript."
+          ],
+          "requirements": [
+            {
+              "id": "r_4170b47d-4c2e-40b5-be03-e21df347dddb",
+              "text": "Build responsive web applications using React and TypeScript",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q_253a18c1-c4e7-48a3-826d-b3368b49f5e1",
+            "requirement_ids": [
+              "r_4170b47d-4c2e-40b5-be03-e21df347dddb"
+            ],
+            "category": "technical",
+            "prompt": "How do you type complex component props and state in React using TypeScript to ensure robust type safety across different screen sizes in a responsive application?",
+            "answer_outline": "Discuss using interfaces or types for props, typing React.FC or functional component return types, handling optional vs required props, leveraging union types for responsive variants or breakpoints, and ensuring proper typing for event handlers and hooks like useState or useEffect.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_6dfa5c6a-6f58-49de-8a89-d77d05bfde22",
+            "requirement_ids": [
+              "r_4170b47d-4c2e-40b5-be03-e21df347dddb"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time when you had to build a complex, responsive web application using React and TypeScript. How did you handle state management and ensure type safety across different screen sizes?",
+            "answer_outline": "The candidate should describe a specific project where they utilized React and TypeScript, explain how they structured their components for responsiveness, discuss TypeScript interface/type design for robust props and state, and highlight any challenges faced during implementation.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_1b335f12-f287-45e0-bc74-d44e599a2c53",
+            "requirement_ids": [
+              "r_4170b47d-4c2e-40b5-be03-e21df347dddb"
+            ],
+            "category": "system_design",
+            "prompt": "Design a responsive dashboard component architecture using React and TypeScript that handles varying screen sizes and complex state management.",
+            "answer_outline": "Discuss component composition, CSS Grid/Flexbox for responsiveness, typing props and state strictly with TypeScript interfaces, custom hooks for window resizing or media queries, and performance optimization techniques like memoization.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_7842ac76-4a79-49e3-8906-0de0297fdba4",
+            "requirement_ids": [
+              "r_4170b47d-4c2e-40b5-be03-e21df347dddb"
+            ],
+            "category": "company_fit",
+            "prompt": "How do you approach building fully responsive web applications using React and TypeScript, and what strategies do you use to ensure robust type safety across different screen sizes?",
+            "answer_outline": "Discuss using CSS media queries or Tailwind breakpoints combined with React state or custom hooks (like window size listeners), leveraging TypeScript interfaces for props and responsive configurations, and ensuring components gracefully adapt to mobile, tablet, and desktop viewports.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f_e06e6102-ed5c-44e3-ab0e-208ae38246a5",
+            "front": "How do you ensure responsive design in a React application using TypeScript?",
+            "back": "Use CSS media queries, flexbox/grid, and responsive units. In TypeScript, type your styling props, view-width hooks, and component layouts correctly to handle dynamic screen sizes.",
+            "requirement_ids": [
+              "r_4170b47d-4c2e-40b5-be03-e21df347dddb"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 1,
+          "days": [
+            {
+              "day": 1,
+              "focus": "System design + Technical preparation + Behavioral preparation + Company and role fit — 4 priority questions",
+              "question_ids": [
+                "q_1b335f12-f287-45e0-bc74-d44e599a2c53",
+                "q_253a18c1-c4e7-48a3-826d-b3368b49f5e1",
+                "q_6dfa5c6a-6f58-49de-8a89-d77d05bfde22",
+                "q_7842ac76-4a79-49e3-8906-0de0297fdba4"
+              ],
+              "minutes": 75
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-03",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Localhost",
+          "company_url": "http://localhost:8099/acme/",
+          "role": "Software Engineer",
+          "location": "",
+          "jd_chars": 43,
+          "jd": "Software Engineer\n\nBuild reliable software.",
+          "researched_at": "2026-09-10T07:12:11.534Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "No reliable company research information was available from the provided website.",
+          "what_they_do": "The company website did not provide enough accessible information to determine what the company does.",
+          "sources": []
+        },
+        "role": {
+          "title": "Software Engineer",
+          "seniority": "Not specified",
+          "responsibilities": [
+            "Build reliable software"
+          ],
+          "requirements": [
+            {
+              "id": "r_44395738-38fb-4ff0-8140-daa69cdbf1e2",
+              "text": "Build reliable software",
+              "kind": "responsibility",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q_24fe4832-90bd-4486-ba01-f342add3f284",
+            "requirement_ids": [
+              "r_44395738-38fb-4ff0-8140-daa69cdbf1e2"
+            ],
+            "category": "technical",
+            "prompt": "How do you approach designing a fault-tolerant system to ensure that the software remains reliable under unexpected failure conditions?",
+            "answer_outline": "Discuss strategies such as implementing robust error handling, circuit breakers, graceful degradation, comprehensive automated testing, monitoring, and designing for idempotency in distributed components.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_d71715c9-2925-445a-b2ff-b4f97808ed9c",
+            "requirement_ids": [
+              "r_44395738-38fb-4ff0-8140-daa69cdbf1e2"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time when you had to debug a critical failure in production. How did you identify the root cause and ensure it didn't happen again to build more reliable software?",
+            "answer_outline": "The candidate should describe a systematic approach to troubleshooting under pressure, identifying the root cause of the failure, implementing a robust fix, and adding automated tests, monitoring, or safeguards to prevent future occurrences.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_b12cbe0d-e30f-4dc5-9ca5-345b790efc36",
+            "requirement_ids": [
+              "r_44395738-38fb-4ff0-8140-daa69cdbf1e2"
+            ],
+            "category": "system_design",
+            "prompt": "Design a high-availability backend service for Localhost that ensures reliable software execution, fault tolerance, and graceful degradation during network partitions or node failures.",
+            "answer_outline": "1. Discuss redundancy and replication strategies to avoid single points of failure.\n2. Explain automated health checks, heartbeats, and leader election mechanisms.\n3. Detail retry mechanisms, circuit breakers, and idempotent API design for failure handling.\n4. Address data persistence, write-ahead logging, and disaster recovery strategies.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_5092761d-994c-4c2c-8f5a-0a014277753b",
+            "requirement_ids": [
+              "r_44395738-38fb-4ff0-8140-daa69cdbf1e2"
+            ],
+            "category": "company_fit",
+            "prompt": "Can you describe a time when you had to diagnose and fix a complex, intermittent bug in a production environment to ensure software reliability?",
+            "answer_outline": "The candidate should explain their systematic approach to debugging, logging, reproducing the issue, implementing a robust fix, and adding tests or monitoring to prevent recurrence.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f_c59a8bd2-8531-4b76-a5d2-254c66fcab11",
+            "front": "What are key practices for building reliable software as a Software Engineer?",
+            "back": "1. Writing comprehensive unit and integration tests.\n2. Implementing robust error handling and logging.\n3. Using continuous integration and continuous deployment (CI/CD) pipelines.\n4. Conducting thorough code reviews.\n5. Designing for fault tolerance and graceful degradation.",
+            "requirement_ids": [
+              "r_44395738-38fb-4ff0-8140-daa69cdbf1e2"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 60,
+          "days": [
+            {
+              "day": 1,
+              "focus": "System design — 1 priority questions",
+              "question_ids": [
+                "q_b12cbe0d-e30f-4dc5-9ca5-345b790efc36"
+              ],
+              "minutes": 35
+            },
+            {
+              "day": 2,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 3,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 4,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 5,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 6,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 7,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 8,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 9,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 10,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 11,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 12,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 13,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 14,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 15,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 16,
+              "focus": "Technical preparation — 1 priority questions",
+              "question_ids": [
+                "q_24fe4832-90bd-4486-ba01-f342add3f284"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 17,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 18,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 19,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 20,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 21,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 22,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 23,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 24,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 25,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 26,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 27,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 28,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 29,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 30,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 31,
+              "focus": "Company and role fit — 1 priority questions",
+              "question_ids": [
+                "q_5092761d-994c-4c2c-8f5a-0a014277753b"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 32,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 33,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 34,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 35,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 36,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 37,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 38,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 39,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 40,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 41,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 42,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 43,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 44,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 45,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 46,
+              "focus": "Behavioral preparation — 1 priority questions",
+              "question_ids": [
+                "q_d71715c9-2925-445a-b2ff-b4f97808ed9c"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 47,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 48,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 49,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 50,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 51,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 52,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 53,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 54,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 55,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 56,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 57,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 58,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 59,
+              "focus": "Review covered requirements",
+              "question_ids": [],
+              "minutes": 15
+            },
+            {
+              "day": 60,
+              "focus": "Final review and interview preparation",
+              "question_ids": [],
+              "minutes": 20
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-04",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Localhost",
+          "company_url": "http://localhost:8099/does-not-exist/",
+          "role": "Backend Developer",
+          "location": "",
+          "jd_chars": 57,
+          "jd": "Backend Developer\n\nBuild APIs and services using Node.js.",
+          "researched_at": "2026-09-10T07:12:46.632Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "No reliable company research information was available from the provided website.",
+          "what_they_do": "The company website did not provide enough accessible information to determine what the company does.",
+          "sources": []
+        },
+        "role": {
+          "title": "Backend Developer",
+          "seniority": "Not specified",
+          "responsibilities": [
+            "Build APIs and services using Node.js"
+          ],
+          "requirements": [
+            {
+              "id": "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac",
+              "text": "Build APIs and services using Node.js.",
+              "kind": "responsibility",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q_2e36a4c1-af8b-4eb1-b69e-b146530dabf9",
+            "requirement_ids": [
+              "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac"
+            ],
+            "category": "technical",
+            "prompt": "Explain how Node.js handles asynchronous operations under the hood using the event loop, and discuss how you structure robust APIs to prevent event loop blockage.",
+            "answer_outline": "Candidates should explain the phases of the Node.js event loop (timers, pending callbacks, poll, check, close callbacks), the role of the libuv thread pool, and how to avoid blocking the main thread by offloading heavy computations or using asynchronous I/O.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_ca721428-3ee6-468d-a1dc-4ba87cbd7a8c",
+            "requirement_ids": [
+              "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac"
+            ],
+            "category": "behavioral",
+            "prompt": "Can you describe a complex API or service you built using Node.js, and walk through how you structured the application and handled asynchronous operations?",
+            "answer_outline": "The candidate should discuss a specific Node.js project, explain their architectural choices (such as modular structure and routing), describe how they managed asynchronous code (using async/await, Promises, or event loops), and highlight any performance or scalability considerations they addressed.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_2d95f989-5b9e-4423-88b6-a800c59fdfed",
+            "requirement_ids": [
+              "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac"
+            ],
+            "category": "system_design",
+            "prompt": "Design a scalable RESTful API service using Node.js that handles high-throughput asynchronous workloads. How would you structure the application, manage the single-threaded event loop to prevent blocking, and handle error management?",
+            "answer_outline": "Discuss the architecture of a Node.js backend, utilizing clustering or worker threads for CPU-bound tasks, leveraging asynchronous I/O to prevent event loop starvation, adopting a clean layered architecture (controllers, services, data access), and implementing robust centralized error handling and logging.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_93a4ac44-8cff-4326-b0c1-2992208fdd0b",
+            "requirement_ids": [
+              "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac"
+            ],
+            "category": "company_fit",
+            "prompt": "Can you describe your experience with building scalable APIs and services using Node.js, and how you handle asynchronous operations and error management in a production environment?",
+            "answer_outline": "The candidate should discuss their hands-on experience designing and implementing RESTful or GraphQL APIs in Node.js, explain how they manage the event loop, handle callbacks/promises/async-await effectively, structure their codebase, and implement robust error handling and logging strategies.",
+            "difficulty": 2
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f_eefa31c9-3a90-44fb-953c-62e3e3ae8dda",
+            "front": "What is the primary runtime environment used for building APIs and backend services in this role?",
+            "back": "Node.js",
+            "requirement_ids": [
+              "r_1fadd4e5-9ea7-437c-a5ad-8fbf79ef5eac"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 3,
+          "days": [
+            {
+              "day": 1,
+              "focus": "System design + Technical preparation — 2 priority questions",
+              "question_ids": [
+                "q_2d95f989-5b9e-4423-88b6-a800c59fdfed",
+                "q_2e36a4c1-af8b-4eb1-b69e-b146530dabf9"
+              ],
+              "minutes": 45
+            },
+            {
+              "day": 2,
+              "focus": "Company and role fit — 1 priority questions",
+              "question_ids": [
+                "q_93a4ac44-8cff-4326-b0c1-2992208fdd0b"
+              ],
+              "minutes": 30
+            },
+            {
+              "day": 3,
+              "focus": "Behavioral preparation — 1 priority questions",
+              "question_ids": [
+                "q_ca721428-3ee6-468d-a1dc-4ba87cbd7a8c"
+              ],
+              "minutes": 30
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "case-05",
+      "status": "ok",
+      "kit": {
+        "source": {
+          "company": "Localhost",
+          "company_url": "http://localhost:8099/acme/",
+          "role": "Full Stack Engineer",
+          "location": "",
+          "jd_chars": 156,
+          "jd": "Senior Full Stack Engineer\n\nBuild production web applications using React, TypeScript, Node.js, REST APIs, databases, testing, Docker, and cloud deployment.",
+          "researched_at": "2026-09-10T07:13:30.362Z",
+          "pages_used": []
+        },
+        "company_brief": {
+          "summary": "No reliable company research information was available from the provided website.",
+          "what_they_do": "The company website did not provide enough accessible information to determine what the company does.",
+          "sources": []
+        },
+        "role": {
+          "title": "Full Stack Engineer",
+          "seniority": "Senior",
+          "responsibilities": [
+            "Build production web applications using React, TypeScript, Node.js, REST APIs, databases, testing, Docker, and cloud deployment."
+          ],
+          "requirements": [
+            {
+              "id": "r_f1e30a9f-0126-4421-a0d5-d45227997014",
+              "text": "Build production web applications using React",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b",
+              "text": "Build production web applications using TypeScript",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_91dd9dad-b845-461a-8ffd-5c430d5508db",
+              "text": "Build production web applications using Node.js",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3",
+              "text": "Build production web applications using REST APIs",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_20682059-3673-4597-9119-941a8a571b2b",
+              "text": "Build production web applications using databases",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc",
+              "text": "Build production web applications using testing",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_69f5e756-8554-4262-87c1-79a0a4dfef26",
+              "text": "Build production web applications using Docker",
+              "kind": "technical",
+              "priority": "must"
+            },
+            {
+              "id": "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4",
+              "text": "Build production web applications using cloud deployment",
+              "kind": "technical",
+              "priority": "must"
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": "q_b9295ec3-c12d-4993-a06b-4da12a7c6eeb",
+            "requirement_ids": [
+              "r_f1e30a9f-0126-4421-a0d5-d45227997014",
+              "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b"
+            ],
+            "category": "technical",
+            "prompt": "How do you type complex component props and state management in a large-scale React application using TypeScript?",
+            "answer_outline": "Discuss using interfaces or type aliases for props, utilizing React.FC or explicit return types, managing generic components, and typing hooks like useState and useReducer correctly.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_71d64ca5-0e03-468e-a7f5-326e3db51de6",
+            "requirement_ids": [
+              "r_91dd9dad-b845-461a-8ffd-5c430d5508db",
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3"
+            ],
+            "category": "technical",
+            "prompt": "Design a RESTful API endpoint in Node.js that handles heavy data pagination and filtering, and explain how you ensure error handling and input validation.",
+            "answer_outline": "Cover Express or a similar Node.js framework, query parameter parsing, validation libraries (like Joi or Zod), structured JSON responses, proper HTTP status codes, and database query optimization.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_0826f6ff-7aa0-4998-b23b-654bc449705f",
+            "requirement_ids": [
+              "r_20682059-3673-4597-9119-941a8a571b2b",
+              "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc"
+            ],
+            "category": "technical",
+            "prompt": "Explain your strategy for testing database-backed Node.js applications, including how you handle test database isolation and data seeding.",
+            "answer_outline": "Mention integration testing strategies, using tools like Jest or Mocha, spinning up test containers or separate test databases, cleaning up data between test runs, and mocking external services if necessary.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_cb5b7f62-a6fa-4f83-b211-0903ace60d9e",
+            "requirement_ids": [
+              "r_69f5e756-8554-4262-87c1-79a0a4dfef26",
+              "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4"
+            ],
+            "category": "technical",
+            "prompt": "Describe how you containerize a full-stack web application using Docker and deploy it to a cloud environment.",
+            "answer_outline": "Explain writing a multi-stage Dockerfile for optimized production images, using Docker Compose for local environments, setting up environment variables securely, and deploying to a cloud provider using container orchestration or managed services.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_70d832cb-dbac-4717-a559-820cef9db100",
+            "requirement_ids": [
+              "r_f1e30a9f-0126-4421-a0d5-d45227997014",
+              "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time you had to build a complex, production-ready React component or feature using TypeScript. How did you structure your types, and how did you ensure performance in a production environment?",
+            "answer_outline": "The candidate should discuss specific React patterns, robust TypeScript typing (avoiding 'any'), handling state and props effectively, and optimizing re-renders or bundle sizes for production.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_ef07e616-90c6-4cf5-9b52-4d341e45175d",
+            "requirement_ids": [
+              "r_91dd9dad-b845-461a-8ffd-5c430d5508db",
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3"
+            ],
+            "category": "behavioral",
+            "prompt": "Describe a scenario where you designed and implemented a backend service using Node.js that exposed a REST API for a production web application. How did you handle error management, validation, and API versioning?",
+            "answer_outline": "Look for experience with Node.js frameworks (like Express or NestJS), structuring RESTful endpoints, validating incoming requests, consistent error handling middleware, and documenting or versioning APIs for consumers.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_08a0d701-389c-4d34-ae5c-d17e87b6a2ad",
+            "requirement_ids": [
+              "r_20682059-3673-4597-9119-941a8a571b2b",
+              "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc"
+            ],
+            "category": "behavioral",
+            "prompt": "Can you share an experience where you had to interact with a database in a production application and ensure your code was thoroughly tested? How did you write tests for database queries or transactions without running into flaky test issues?",
+            "answer_outline": "The candidate should explain their approach to database integration or unit testing, mocking or using test containers, handling database migrations, and maintaining reliable test suites in a CI/CD pipeline.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_e8ad6a07-8481-41fa-bdfc-86e93636b276",
+            "requirement_ids": [
+              "r_69f5e756-8554-4262-87c1-79a0a4dfef26",
+              "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4"
+            ],
+            "category": "behavioral",
+            "prompt": "Tell me about a time you containerized a full-stack web application using Docker and deployed it to a cloud environment. What challenges did you face with environment configurations or orchestration, and how did you resolve them?",
+            "answer_outline": "Expect discussion on writing multi-stage Dockerfiles, managing environment variables securely, setting up CI/CD pipelines for cloud deployment, and monitoring or scaling the application in the cloud.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_b1133057-9a3a-4568-8c78-b85d4709f09d",
+            "requirement_ids": [
+              "r_f1e30a9f-0126-4421-a0d5-d45227997014",
+              "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b",
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3"
+            ],
+            "category": "system_design",
+            "prompt": "Design the frontend architecture of a large-scale production web application using React and TypeScript that consumes a complex REST API backend. How would you structure your component hierarchy, manage global state, ensure type safety across the network boundary, and handle asynchronous data fetching and caching?",
+            "answer_outline": "Discuss component composition patterns, custom hooks for API calls, TypeScript interfaces mirroring backend DTOs, state management solutions (e.g., React Context, Zustand, or Redux Toolkit), and data fetching strategies using libraries like React Query for caching, error handling, and loading states.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_d66db741-5aba-48fa-852e-7384d3b34475",
+            "requirement_ids": [
+              "r_91dd9dad-b845-461a-8ffd-5c430d5508db",
+              "r_20682059-3673-4597-9119-941a8a571b2b",
+              "r_69f5e756-8554-4262-87c1-79a0a4dfef26",
+              "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4"
+            ],
+            "category": "system_design",
+            "prompt": "Design a scalable backend service using Node.js and a primary database that will be deployed via Docker to a cloud environment. Explain your approach to handling database connection pooling, structuring the Node.js application architecture, creating a multi-stage Dockerfile for production, and setting up deployment pipelines with environment configuration management.",
+            "answer_outline": "Cover Node.js asynchronous event loop management, MVC or layered architecture, proper ORM/ODM selection with connection pooling, multi-stage Docker builds to keep images lean and secure, environment variable injection, and cloud deployment considerations like health checks and horizontal scaling.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_b95fcb4a-22c9-4945-998a-a8982aa2e148",
+            "requirement_ids": [
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3",
+              "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc"
+            ],
+            "category": "system_design",
+            "prompt": "How would you design a comprehensive testing strategy for a full-stack feature involving a REST API and a client application? Detail how you would approach unit testing, integration testing of the API endpoints, and end-to-end testing of the user interface.",
+            "answer_outline": "Outline the testing pyramid approach, using Jest and Supertest for Node.js REST API integration tests, React Testing Library for component unit and interaction tests, and Cypress or Playwright for end-to-end user journeys in a simulated production environment.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_4ef57298-d787-4273-a650-9de7b51bb148",
+            "requirement_ids": [
+              "r_f1e30a9f-0126-4421-a0d5-d45227997014",
+              "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b"
+            ],
+            "category": "company_fit",
+            "prompt": "How do you ensure type safety and scalable component architecture when building large production web applications with React and TypeScript?",
+            "answer_outline": "Discuss using strict TypeScript configurations, defining explicit props and state interfaces, organizing components logically, and leveraging custom hooks to separate business logic from UI rendering.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_236a4ba0-d101-4cdd-8766-e4f71ffeb2e0",
+            "requirement_ids": [
+              "r_91dd9dad-b845-461a-8ffd-5c430d5508db",
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3"
+            ],
+            "category": "company_fit",
+            "prompt": "Describe your approach to designing, implementing, and securing REST APIs in a production Node.js environment.",
+            "answer_outline": "Mention using frameworks like Express or NestJS, structuring routes and controllers cleanly, implementing robust error handling and validation, and applying security best practices such as rate limiting and authentication middleware.",
+            "difficulty": 2
+          },
+          {
+            "id": "q_dad297c1-dcd6-42f4-9d9d-b35ba65ab081",
+            "requirement_ids": [
+              "r_20682059-3673-4597-9119-941a8a571b2b",
+              "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc"
+            ],
+            "category": "company_fit",
+            "prompt": "How do you approach database schema design for performance and maintainability, and what is your strategy for testing your data layer?",
+            "answer_outline": "Explain normalization vs. denormalization strategies, indexing for query performance, using migrations, and writing integration or unit tests for database queries using mocking or test containers.",
+            "difficulty": 3
+          },
+          {
+            "id": "q_145be3d2-9c46-4f6a-b5d4-1160317a0ebb",
+            "requirement_ids": [
+              "r_69f5e756-8554-4262-87c1-79a0a4dfef26",
+              "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4"
+            ],
+            "category": "company_fit",
+            "prompt": "Walk through your process for containerizing a full stack web application with Docker and deploying it to a cloud environment.",
+            "answer_outline": "Discuss writing multi-stage Dockerfiles to optimize image size, managing environment variables securely, setting up Docker Compose for local development, and deploying to a cloud platform like AWS, GCP, or Heroku with CI/CD pipelines.",
+            "difficulty": 3
+          }
+        ],
+        "flashcards": [
+          {
+            "id": "f_ce9be2bb-618f-4202-b9ae-306b785a4337",
+            "front": "What are key practices for building production-ready React web applications?",
+            "back": "Use code splitting, optimize re-renders with useCallback and useMemo, implement proper error boundaries, manage state effectively, and ensure accessibility (a11y).",
+            "requirement_ids": [
+              "r_f1e30a9f-0126-4421-a0d5-d45227997014"
+            ]
+          },
+          {
+            "id": "f_fb7a4e00-d00e-4cd8-b9d4-8bc469944528",
+            "front": "How does TypeScript improve production web applications?",
+            "back": "It provides static type checking, enhances code maintainability, catches errors at compile-time rather than runtime, and improves IDE auto-completion and refactoring.",
+            "requirement_ids": [
+              "r_f72d1a9b-3bbb-4795-9114-06d2c2516a9b"
+            ]
+          },
+          {
+            "id": "f_bf26ff71-1897-48d3-8e7d-e9d11c6ac745",
+            "front": "What are essential considerations for Node.js in production?",
+            "back": "Handle asynchronous operations properly, implement robust error handling, secure application headers, manage environment variables securely, and monitor memory usage and event loop lag.",
+            "requirement_ids": [
+              "r_91dd9dad-b845-461a-8ffd-5c430d5508db"
+            ]
+          },
+          {
+            "id": "f_8b72a7e9-19cc-474f-84c6-2c56bbca40ef",
+            "front": "What are the best practices for designing and consuming REST APIs in web apps?",
+            "back": "Use correct HTTP methods and status codes, implement proper authentication/authorization, use pagination and filtering for large datasets, and maintain clear API documentation.",
+            "requirement_ids": [
+              "r_3bf5e96b-27f7-4964-b097-59a216d4a9b3"
+            ]
+          },
+          {
+            "id": "f_2ec84e15-e6d1-439b-98b2-a715d39eea98",
+            "front": "How do you ensure database reliability and performance in production web applications?",
+            "back": "Use proper indexing, write efficient queries, handle connection pooling, implement migrations safely, and set up regular backups and monitoring.",
+            "requirement_ids": [
+              "r_20682059-3673-4597-9119-941a8a571b2b"
+            ]
+          },
+          {
+            "id": "f_9a95c8aa-4e98-4dd4-8ea6-eb814031f804",
+            "front": "What is a comprehensive testing strategy for full stack web applications?",
+            "back": "Combine unit tests for functions/components, integration tests for APIs and database interactions, and end-to-end (E2E) tests for critical user flows.",
+            "requirement_ids": [
+              "r_2d50890d-5a52-4831-aabf-e2415fd8d9dc"
+            ]
+          },
+          {
+            "id": "f_d9cf3a41-340f-4ce2-9a46-6ed327607086",
+            "front": "What are best practices for using Docker in web application deployment?",
+            "back": "Use multi-stage builds to minimize image size, run containers as non-root users, pin base image versions, and use `.dockerignore` to exclude unnecessary files.",
+            "requirement_ids": [
+              "r_69f5e756-8554-4262-87c1-79a0a4dfef26"
+            ]
+          },
+          {
+            "id": "f_ea9f5064-51c6-40e1-a187-ebb3beda26d8",
+            "front": "What are key components of cloud deployment for production web applications?",
+            "back": "Automated CI/CD pipelines, infrastructure as code (IaC), horizontal scaling, load balancing, environment-specific configuration management, and centralized logging/monitoring.",
+            "requirement_ids": [
+              "r_9a83b9c9-36d2-4a19-9bb1-daa12f835bb4"
+            ]
+          }
+        ],
+        "schedule": {
+          "days_available": 7,
+          "days": [
+            {
+              "day": 1,
+              "focus": "System design + Technical preparation — 3 priority questions",
+              "question_ids": [
+                "q_d66db741-5aba-48fa-852e-7384d3b34475",
+                "q_b1133057-9a3a-4568-8c78-b85d4709f09d",
+                "q_0826f6ff-7aa0-4998-b23b-654bc449705f"
+              ],
+              "minutes": 70
+            },
+            {
+              "day": 2,
+              "focus": "Behavioral preparation + Company and role fit — 2 priority questions",
+              "question_ids": [
+                "q_08a0d701-389c-4d34-ae5c-d17e87b6a2ad",
+                "q_145be3d2-9c46-4f6a-b5d4-1160317a0ebb"
+              ],
+              "minutes": 55
+            },
+            {
+              "day": 3,
+              "focus": "Technical preparation + Company and role fit — 2 priority questions",
+              "question_ids": [
+                "q_cb5b7f62-a6fa-4f83-b211-0903ace60d9e",
+                "q_dad297c1-dcd6-42f4-9d9d-b35ba65ab081"
+              ],
+              "minutes": 55
+            },
+            {
+              "day": 4,
+              "focus": "Behavioral preparation + Company and role fit — 2 priority questions",
+              "question_ids": [
+                "q_e8ad6a07-8481-41fa-bdfc-86e93636b276",
+                "q_236a4ba0-d101-4cdd-8766-e4f71ffeb2e0"
+              ],
+              "minutes": 50
+            },
+            {
+              "day": 5,
+              "focus": "Company and role fit + Behavioral preparation — 2 priority questions",
+              "question_ids": [
+                "q_4ef57298-d787-4273-a650-9de7b51bb148",
+                "q_70d832cb-dbac-4717-a559-820cef9db100"
+              ],
+              "minutes": 45
+            },
+            {
+              "day": 6,
+              "focus": "Technical preparation — 2 priority questions",
+              "question_ids": [
+                "q_71d64ca5-0e03-468e-a7f5-326e3db51de6",
+                "q_b9295ec3-c12d-4993-a06b-4da12a7c6eeb"
+              ],
+              "minutes": 45
+            },
+            {
+              "day": 7,
+              "focus": "System design + Behavioral preparation — 2 priority questions",
+              "question_ids": [
+                "q_b95fcb4a-22c9-4945-998a-a8982aa2e148",
+                "q_ef07e616-90c6-4cf5-9b52-4d341e45175d"
+              ],
+              "minutes": 45
+            }
+          ]
+        },
+        "coverage": {
+          "uncovered_requirement_ids": [],
+          "passes": 1
+        }
+      },
+      "error": null
+    }
+  ]
+}
