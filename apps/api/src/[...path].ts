@@ -1,5 +1,5 @@
-import { createApp } from "../src/app.js";
-import { connectDatabase } from "../src/config/database.js";
+import { createApp } from "./app.js";
+import { connectDatabase } from "./config/database.js";
 
 let dbConnection: Promise<unknown> | null = null;
 

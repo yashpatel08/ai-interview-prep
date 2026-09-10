@@ -1,7 +1,4 @@
 {
     "version": 2,
-    "buildCommand": "npm run build:api --prefix ../..",
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/api" }
-    ]
+    "buildCommand": "npm run build:api --prefix ../.."
 }
