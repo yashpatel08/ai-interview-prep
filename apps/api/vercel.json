@@ -1,12 +1,7 @@
 {
     "version": 2,
-    "buildCommand": "npm run build:api --prefix ../..",
-    "functions": {
-        "dist/index.js": {
-            "includeFiles": "dist/**"
-        }
-    },
+    "buildCommand": "npm run build --workspace=packages/core",
     "rewrites": [
-        { "source": "/(.*)", "destination": "/dist/index.js" }
+        { "source": "/(.*)", "destination": "/api" }
     ]
 }
