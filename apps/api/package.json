@@ -9,11 +9,14 @@
         "start": "node dist/server.js"
     },
     "dependencies": {
-        "@ai-interview-prep/core": "*"
+        "@ai-interview-prep/core": "*",
+        "cheerio": "^1.2.0",
+        "mongoose": "^9.9.5"
     },
     "devDependencies": {
         "@types/express": "^5.0.6",
         "@types/node": "^22.20.2",
-        "typescript": "^7.0.2"
+        "typescript": "^7.0.2",
+        "zod": "^4.6.1"
     }
 }
