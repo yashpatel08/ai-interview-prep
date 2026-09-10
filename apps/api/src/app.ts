@@ -1,12 +1,13 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 
 import { env } from "./config/env.js";
 import { healthRouter } from "./routes/health.js";
 import { authRouter } from "./routes/auth.js";
 import { kitsRouter } from "./routes/kits.js";
 import { errorHandler } from "./middleware/errorHandler.js";
-import cookieParser from "cookie-parser";
+
 export function createApp() {
     const app = express();
 
@@ -44,7 +45,12 @@ export function createApp() {
     app.use("/api/health", healthRouter);
     app.use("/api/auth", authRouter);
     app.use("/api/kits", kitsRouter);
+
     app.use(errorHandler);
 
     return app;
 }
+
+const app = createApp();
+
+export default app;
