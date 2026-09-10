@@ -8,6 +8,21 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "resolveJsonModule": true,
-        "isolatedModules": true
-    }
+        "isolatedModules": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "types": [
+            "node"
+        ],
+        "noEmit": false
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "../web",
+        "../../packages/core"
+    ]
 }
